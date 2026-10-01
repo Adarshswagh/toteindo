@@ -25,8 +25,8 @@ export default function SustainabilitySection() {
             <br />
             <em className="italic text-[#7E1323]">Meaningful impact.</em>
           </h2>
-          <p className="section-copy mx-auto max-w-lg">
-            Every reusable Toteindo product is a step towards reducing our dependence on disposable alternatives.
+          <p className="section-copy mx-auto max-w-xl">
+            Helping people carry more while leaving a smaller footprint on the planet. Every reusable Toteindo bag replaces hundreds of single-use plastic bags.
           </p>
         </div>
 
@@ -46,10 +46,17 @@ export default function SustainabilitySection() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
-          {tags.map((tag) => (
+          {[
+            '100% Natural Canvas',
+            'Plastic Alternative',
+            'Reusable & Washable',
+            'Handcrafted in India',
+            'Mindful Everyday Living',
+            'Zero Compromise Style',
+          ].map((tag) => (
             <span
               key={tag}
-              className="border border-[#7E1323]/25 px-4 py-2 font-ui text-[10px] uppercase tracking-[2px] text-[#7E1323]"
+              className="border border-[#7E1323]/25 bg-white/60 px-4 py-2 font-ui text-[10px] uppercase tracking-[2px] text-[#7E1323]"
             >
               {tag}
             </span>

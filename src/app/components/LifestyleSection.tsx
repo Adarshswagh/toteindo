@@ -26,9 +26,12 @@ export default function LifestyleSection() {
               <br />
               life takes you.
             </h2>
+            <p className="mt-2 font-ui text-sm font-light text-[#5a5c5c]">
+              From morning office desks to college campus walks, quiet corner cafés, and weekend farmer markets.
+            </p>
           </div>
           <Link href="/collections" className="text-link shrink-0 self-start sm:self-auto">
-            Shop the Look
+            Explore All Bags
             <ArrowRight size={12} />
           </Link>
         </div>

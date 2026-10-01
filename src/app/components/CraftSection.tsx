@@ -1,9 +1,22 @@
 import Image from 'next/image';
 
 const craftPoints = [
-  { label: 'Natural Canvas', desc: 'Sourced from sustainable Indian cotton mills.' },
-  { label: 'Indian Fabrics', desc: 'Block prints, ikat, and handloom textiles woven in.' },
-  { label: 'Precision Stitching', desc: 'Double-stitched seams built for lasting strength.' },
+  {
+    label: 'Primary: 100% Premium Natural Canvas',
+    desc: 'High-density, unbleached cotton canvas providing unmatched durability, breathability, and eco-friendly strength.',
+  },
+  {
+    label: 'Handblock & Printed Cotton Accents',
+    desc: 'Authentic Indian artisanal prints and decorative fabric details that celebrate regional textile heritage.',
+  },
+  {
+    label: 'Cotton Rope & Reinforced Handles',
+    desc: 'Ergonomically crafted handles designed for comfortable shoulder carry with heavy everyday loads.',
+  },
+  {
+    label: 'Precision Stitching & Easy Maintenance',
+    desc: 'Double-stitched stress points, clean seam finishes, and washable construction built for years of dependable use.',
+  },
 ];
 
 export default function CraftSection() {
@@ -35,7 +48,7 @@ export default function CraftSection() {
           <div className="order-1 lg:order-2">
             <div className="section-kicker">
               <span className="gold-divider" />
-              <span className="eyebrow">Our Craft</span>
+              <span className="eyebrow">Materials & Craftsmanship</span>
             </div>
             <h2
               className="display-title mb-5 text-[#1D1F1F]"
@@ -43,25 +56,24 @@ export default function CraftSection() {
             >
               Rooted in India.
               <br />
-              <em className="italic text-[#7E1323]">Designed for today.</em>
+              <em className="italic text-[#7E1323]">Designed for everyday living.</em>
             </h2>
             <p className="section-copy mb-8">
-              From natural canvas to thoughtfully selected Indian fabrics, every Toteindo product
-              brings together contemporary simplicity and the richness of Indian craftsmanship.
+              Every Toteindo product is designed for people who appreciate minimal aesthetics, handcrafted details, and conscious living. We marry premium natural canvas with thoughtful Indian craft to make everyday essentials practical and long-lasting.
             </p>
             <div className="border-t border-[#e8e2d8]">
               {craftPoints.map((item, i) => (
-                <div key={item.label} className="flex items-start gap-4 border-b border-[#e8e2d8] py-5">
+                <div key={item.label} className="flex items-start gap-4 border-b border-[#e8e2d8] py-4">
                   <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center bg-[#7E1323]/8">
                     <span className="font-ui text-[10px] font-medium text-[#7E1323]">
                       {String(i + 1).padStart(2, '0')}
                     </span>
                   </span>
                   <div>
-                    <p className="mb-1 font-ui text-[11px] font-medium uppercase tracking-[2px] text-[#7E1323]">
+                    <p className="mb-1 font-ui text-[12px] font-medium uppercase tracking-[1.5px] text-[#7E1323]">
                       {item.label}
                     </p>
-                    <p className="font-ui text-sm font-light leading-relaxed text-[#5a5c5c]">{item.desc}</p>
+                    <p className="font-ui text-xs sm:text-sm font-light leading-relaxed text-[#5a5c5c]">{item.desc}</p>
                   </div>
                 </div>
               ))}

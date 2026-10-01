@@ -73,12 +73,12 @@ export default function Footer() {
             <div className="mb-5">
               <LogoImage width={130} height={48} inverted />
             </div>
-            <p className="font-ui text-white/50 text-sm font-light leading-[1.8] mb-4 max-w-md lg:max-w-xs">
-              Premium canvas products for modern everyday life. Designed with Indian creativity, crafted to perfection.
+            <p className="font-ui text-white/60 text-sm font-light leading-[1.8] mb-3 max-w-md lg:max-w-xs">
+              Toteindo is an Indian lifestyle brand creating premium canvas products that combine functionality, sustainability, and timeless design.
             </p>
-            <div className="mb-6">
-              <HandGesture pose="wave" tone="gold" className="h-8 w-8" />
-            </div>
+            <p className="font-display italic text-[#B38A4D] text-sm mb-5">
+              Carry Better. Live Better. Carry Toteindo.
+            </p>
 
             {/* Social Links */}
             <div className="flex items-center gap-3 mb-6">

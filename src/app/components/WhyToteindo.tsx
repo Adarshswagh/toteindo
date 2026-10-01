@@ -47,15 +47,18 @@ export default function WhyToteindo() {
         <div className="section-head is-center">
           <div className="section-kicker is-center">
             <span className="gold-divider" />
-            <span className="eyebrow">Why Choose Us</span>
+            <span className="eyebrow">The Toteindo Difference</span>
             <span className="gold-divider" />
           </div>
           <h2
-            className="display-title text-white"
+            className="display-title text-white mb-3"
             style={{ fontSize: 'clamp(30px, 3.8vw, 46px)' }}
           >
-            Designed with intention.
+            What Makes Toteindo Different?
           </h2>
+          <p className="mx-auto max-w-2xl font-ui text-[15px] font-light leading-relaxed text-white/70">
+            We believe sustainability should never compromise style. That&apos;s why our collections blend modern design with timeless simplicity, making them suitable for every lifestyle.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-3">

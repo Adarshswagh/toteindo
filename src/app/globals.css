@@ -31,14 +31,14 @@
   --charcoal-light: #3a3c3c;
   --warm-white: #FDFAF6;
   --soft-brown: #8B6B4E;
-  --page-pad: 20px;
+  --page-pad: 16px;
   --section-y: 56px;
   --block-gap: 32px;
 }
 
 @media (min-width: 768px) {
   :root {
-    --page-pad: 32px;
+    --page-pad: 24px;
     --section-y: 72px;
     --block-gap: 40px;
   }
@@ -46,9 +46,15 @@
 
 @media (min-width: 1024px) {
   :root {
-    --page-pad: 40px;
+    --page-pad: 32px;
     --section-y: 80px;
     --block-gap: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --page-pad: 36px;
   }
 }
 
@@ -73,13 +79,20 @@ body {
   font-family: 'Jost', 'Inter', sans-serif;
   background-color: var(--warm-white);
   color: var(--charcoal);
+  overflow-x: hidden;
 }
 
 .site-wrap {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin-inline: auto;
   padding-inline: var(--page-pad);
+}
+
+@media (min-width: 1600px) {
+  .site-wrap {
+    max-width: 1560px;
+  }
 }
 
 .section-padding {
@@ -216,27 +229,6 @@ h1, h2, h3, .font-display {
 
 .hand-ok {
   animation: handOk 1.8s ease-in-out infinite;
-}
-
-.hand-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 200;
-  pointer-events: none;
-  margin-left: -6px;
-  margin-top: -4px;
-  transition: transform 0.08s linear, scale 0.2s ease;
-}
-
-.hand-cursor.is-active {
-  scale: 1.18;
-}
-
-body.has-hand-cursor,
-body.has-hand-cursor a,
-body.has-hand-cursor button {
-  cursor: none;
 }
 
 .account-card,

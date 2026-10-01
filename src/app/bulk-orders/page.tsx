@@ -14,25 +14,25 @@ const options = [
     id: 'corporate',
     icon: <Briefcase size={22} strokeWidth={1.4} />,
     title: 'Corporate Gifting',
-    desc: 'Premium branded canvas bags for teams, clients and events.',
+    desc: 'Premium branded canvas bags for employee welcomes, clients, and annual summits.',
   },
   {
     id: 'custom',
     icon: <Tag size={22} strokeWidth={1.4} />,
-    title: 'Custom Branding',
-    desc: 'Your logo, your message — on premium natural canvas.',
+    title: 'Small Businesses & Custom Branding',
+    desc: 'Your logo and artwork screen-printed on premium natural canvas packaging.',
   },
   {
     id: 'events',
     icon: <CalendarHeart size={22} strokeWidth={1.4} />,
-    title: 'Events & Weddings',
-    desc: 'Thoughtful, beautiful keepsakes for every celebration.',
+    title: 'Events & Wedding Planners',
+    desc: 'Thoughtful, reusable aesthetic keepsakes and gift hampers for celebrations.',
   },
   {
     id: 'cafes',
     icon: <Coffee size={22} strokeWidth={1.4} />,
-    title: 'Cafés & Boutiques',
-    desc: 'Branded bags that carry your identity everywhere.',
+    title: 'Cafés, Boutiques & Stores',
+    desc: 'Artisanal merchandise and tote bags that carry your brand into daily life.',
   },
 ];
 
